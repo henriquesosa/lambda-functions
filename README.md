@@ -1,7 +1,7 @@
-# Lamba Functions
+# Python Exercises
 
-I created this repo to make some examples of how to build AWS Lambda functions using in Python
+I created this repo to study Python
 
 ## Examples
 
-[Exchange rates](examples/exchange.py)
+[AWS Lambda Exchange Function](examples/aws-lamba-exchange-function.py)
