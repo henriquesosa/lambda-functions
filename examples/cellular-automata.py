@@ -1,19 +1,29 @@
 from random import randint
 
 parent_cells = []
-parent_cells_length = 10
+parent_cells_length = 50
 cellss = []
 
-generations = 300
+generations = 1000
 
 # Apply Wolfram's Rule 110
 def rule_110(cell, left, right):
     if(left == 1 and cell == 1 and right == 1):
         return 0
+    elif(left == 1 and cell == 1 and right == 0):
+        return 1
     elif(left == 1 and cell == 0 and right == 1):
+        return 1
+    elif(left == 1 and cell == 0 and right == 0):
+        return 0
+    elif(left == 0 and cell == 1 and right == 1):
+        return 1
+    elif(left == 0 and cell == 1 and right == 0):
         return 1
     elif(left == 0 and cell == 0 and right == 1):
         return 1
+    elif(left == 0 and cell == 0 and right == 0):
+        return 0
     else:
         return cell
 
