@@ -1,11 +1,5 @@
 from random import randint
 
-parent_cells = []
-parent_cells_length = 50
-cellss = []
-
-generations = 1000
-
 class Automata:
     def __init__(self, children, generations):
         self.parent_cells_length =  children
@@ -90,7 +84,7 @@ class Automata:
                     line += "   "
 
             print line
-     
+            
 automata = Automata(71, 300)
 automata_result = automata.calc("110")
 automata.print_line(automata_result)
